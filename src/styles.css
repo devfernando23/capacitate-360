@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #13161c;
+  color: #ffffff;
+}
+
+.mat-toolbar {
+  background-color: #13161c !important;
+  color: white !important;
+}
+
+.mat-button {
+  color: #0066b3 !important;
+}
