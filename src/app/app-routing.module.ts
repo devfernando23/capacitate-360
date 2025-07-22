@@ -9,14 +9,14 @@ const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./layouts/dashboard-layout/dashboard-layout.module').then(m => m.DashboardLayoutModule),
-    canActivate: [AuthGuard]
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
+    //canActivate: [AuthGuard]
   },
   { path: '**', redirectTo: 'login' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

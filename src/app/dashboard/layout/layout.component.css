@@ -1,0 +1,22 @@
+.dashboard-container {
+  height: 100vh;
+  background-color: #13161c;
+  color: #fff;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1c1f26;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dashboard-body {
+  flex: 1;
+  padding: 24px;
+  overflow: auto;
+}
