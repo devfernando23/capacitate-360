@@ -41,7 +41,7 @@ export class LoginComponent {
 
     if (accesoValido) {
       console.log("validar",accesoValido);
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/dashboard/home']);
     } else {
       alert('Credenciales incorrectas');
     }
